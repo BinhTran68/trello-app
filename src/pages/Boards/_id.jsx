@@ -13,8 +13,6 @@ const Board = () => {
         <BoardBar/>
         <BoardContent/>
       </Container>
-
-      <hr/>
     </>
   )
 }

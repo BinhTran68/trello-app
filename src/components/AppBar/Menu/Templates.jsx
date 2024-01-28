@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import { Box } from "@mui/material";
+import {Box} from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Divider from '@mui/material/Divider';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -23,6 +23,9 @@ const Templates = () => {
     return (
         <Box>
             <Button
+                sx={{
+                    color: 'white'
+                }}
                 id="basic-button-templates"
                 aria-controls={open ? 'basic-menu-templates' : undefined}
                 aria-haspopup="true"
@@ -52,18 +55,18 @@ const Templates = () => {
                 </MenuItem>
                 <MenuItem>
                     <ListItemIcon>
-                        <Check />
+                        <Check/>
                     </ListItemIcon>
                     Custom: 1.2
                 </MenuItem>
-                <Divider />
+                <Divider/>
                 <MenuItem>
                     <ListItemText>Add space before paragraph</ListItemText>
                 </MenuItem>
                 <MenuItem>
                     <ListItemText>Add space after paragraph</ListItemText>
                 </MenuItem>
-                <Divider />
+                <Divider/>
                 <MenuItem>
                     <ListItemText>Custom spacing...</ListItemText>
                 </MenuItem>
